@@ -13,7 +13,9 @@ NOTE: This is Slider style file. All Slider related style included in this file.
 .slider-area, .banner-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .banner-content .container, .banner-content .row, .banner-content .col-lg-8, .banner-content .text-content-wrapper, .banner-content .text-content, .banner-content .display-table, .banner-content .display-table-cell{
     height: 100%;
 }
-.text-content-wrapper, .slider-area img {width: 100%;}
+.text-content-wrapper, .slider-area img {
+  /*width: 100%;*/
+}
 .banner-content .text-content-wrapper {display: table;}
 .banner-content .text-content {
     display: table-cell;

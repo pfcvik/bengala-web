@@ -17,27 +17,27 @@
 	06. ScrollUp
 	07. Wow js
 	08. Datepicker
- 
+
 ======================================
 [ End table content ]
 ======================================*/
 
 (function ($) {
 	"use strict";
-    
+
 /*------------------------------------
     01. Sticky Menu
--------------------------------------- */  
+-------------------------------------- */
     var windows = $(window);
     var stick = $(".header-sticky");
-	windows.on('scroll',function() {    
+	windows.on('scroll',function() {
 		var scroll = windows.scrollTop();
 		if (scroll < 245) {
 			stick.removeClass("sticky");
 		}else{
 			stick.addClass("sticky");
 		}
-	}); 
+	});
 /*----------------------------------------
     02. Owl Carousel
 ---------------------------------------- */
@@ -74,7 +74,7 @@
         dots: true,
 		nav:false,
 		animateOut: 'slideOutDown',
-		animateIn: 'slideInDown',		
+		animateIn: 'slideInDown',
 		autoplay:false,
 		smartSpeed:3000,
 		responsive:{
@@ -88,8 +88,8 @@
 				items:1
 			}
 		}
-	}); 
-    
+	});
+
 /*-------------------------------------
     Blog Carousel
 -------------------------------------- */
@@ -107,10 +107,10 @@
             },
             768:{
                 items:2
-            }, 
+            },
             992:{
                 items:2
-            }, 
+            },
             1200:{
                 items:3
             }
@@ -123,7 +123,7 @@
 		meanScreenWidth: "991",
 		meanMenuContainer: '.mobile-menu'
 	});
-    
+
 /*----------------------------------------
 	04. Mail Chimp
 ------------------------------------------*/
@@ -133,44 +133,80 @@
         // ADD YOUR MAILCHIMP URL BELOW HERE!
         url: 'http://themeshaven.us8.list-manage.com/subscribe/post?u=759ce8a8f4f1037e021ba2922&amp;id=a2452237f8'
     });
-    
+
     function mailChimpResponse(resp) {
-        
+
         if (resp.result === 'success') {
             $('.mailchimp-success').html('' + resp.msg).fadeIn(900);
             $('.mailchimp-error').fadeOut(400);
-            
+
         } else if(resp.result === 'error') {
             $('.mailchimp-error').html('' + resp.msg).fadeIn(900);
-        }  
+        }
     }
-    
+
 /*-----------------------------------------
     05. Counter Up
------------------------------------------- */	
+------------------------------------------ */
     $('.counter').counterUp({
         delay: 70,
         time: 5000
-    }); 
-	
+    });
+
 /*------------------------------------------
     06. ScrollUp
-------------------------------------------- */	
+------------------------------------------- */
 	$.scrollUp({
         scrollText: '<i class="fa fa-angle-up"></i>',
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
-    });  
-    
+    });
+
 /*-------------------------------------------
     07. Wow js
---------------------------------------------- */    
+--------------------------------------------- */
     new WOW().init();
-    
+
 /*-------------------------------------------
     08. Datepicker
 --------------------------------------------- */
     $('.datepicker').datepicker();
-	
-})(jQuery);  
+
+		// Slider
+  $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+ autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+})(jQuery);

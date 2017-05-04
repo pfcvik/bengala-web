@@ -57,7 +57,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 .main-menu ul li:hover > ul {
     opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
 }
 .main-menu ul li ul li a {}
@@ -130,7 +130,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 .header-sticky.sticky {
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
             animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    background: rgba(0, 0, 0, 0.88) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
     left: 0;
     padding: 0;
     position: fixed;
@@ -257,7 +257,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   height: 40px;
     color: #252525
 }
-#search-form > input::-moz-placeholder {color: #252525;} 
+#search-form > input::-moz-placeholder {color: #252525;}
 #search-form > input::-webkit-input-placeholder {color: #252525;}
 #search-form > button {
     font-size: 15px;

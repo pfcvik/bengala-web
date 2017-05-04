@@ -854,7 +854,7 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  min-height: 10px;
+  min-height: 5px;
 }
 
 .image-divisor-margin {
