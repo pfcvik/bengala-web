@@ -189,6 +189,10 @@
 /*  4. Booking Area
 /*----------------------------------------*/
 .booking-form input {margin-bottom: 20px;}
+.booking-form input {
+    color: #614a3d;
+    border-color: rgba(97, 74, 61, 0.43);
+}
 .booking-form input:focus {
     color: #614a3d;
     border-color: #614a3d;
@@ -209,6 +213,10 @@
     color: 614a3d
 }
 .booking-form .default-btn {margin-top: 20px; padding: 0 98px;}
+.booking-form {
+  background-color: #ffffff;
+  padding: 20px;
+}
 .active.day {
     background: #614a3d none repeat scroll 0 0;
     color: #ffffff;
@@ -779,7 +787,7 @@
 /*----------------------------------------*/
 .image-wrapper {position: relative;}
 .image-wrapper:after {
-    background: #614a3d none repeat scroll 0 0;
+    background: rgba(97, 74, 61, 0.87) none repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
@@ -857,6 +865,162 @@
   min-height: 5px;
 }
 
+.form-title {
+  background: #b79454;
+  color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  display: flow-root;
+}
+
 .image-divisor-margin {
   margin-bottom: 20px;
+}
+
+.booking-area {
+  background-image: url("img/bg/bg-form.jpg");
+  background-position: 55% bottom;
+}
+
+.black-section {
+  display: flow-root;
+  background: #000;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.black-section h1,
+.black-section h2,
+.black-section h3 {
+  color: #ffffff;
+}
+
+.form-right {
+  float: right;
+}
+
+.modal-center {
+  align-content: center;
+}
+
+.icon-hover:hover {box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);}
+.icon-image {position: relative;}
+.icon-image:after {
+    background: rgba(183, 148, 84, 0.74) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.icon-hover:hover .icon-image:after {
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 10px;
+    top: 10px;
+}
+.icon-image > img {width: 100%;}
+
+.franquicia-area {
+  padding: 256px 0 300px;
+  color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.franquicia-area-bg {
+  padding: 256px 0 178px;
+  color: #000;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.franquicia-information-container {
+    background: #ffffff none repeat scroll 0 0;
+    display: block;
+    margin-top: 450px;
+    padding: 94px 20px 70px;
+    position: absolute;
+    right: 14%;
+    top: 0;
+    width: 35%;
+}
+
+.franquicia-information-container-left {
+    background: #ffffff none repeat scroll 0 0;
+    display: block;
+    margin-top: 450px;
+    padding: 94px 0 70px;
+    position: absolute;
+    left: 14%;
+    top: 0;
+    width: 35%;
+}
+
+.bg-35 {
+    background-attachment: scroll;
+	background-clip: initial;
+	background-color: #fff;
+	background-origin: initial;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  padding-bottom: 300px;
+}
+
+.franquicias-title {
+  float: right;
+  margin-right: 30%;
+}
+.franquicias-title > h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.active h1 {
+  color: #b79454;
+}
+
+.tab-img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.text-scroll {
+    height: 500px;
+    overflow-y: scroll;
 }

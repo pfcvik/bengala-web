@@ -45,7 +45,7 @@
                   <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#about">Quiénes somos</a></li>
-                    <li><a href="#">Café Bengala</a>
+                    <li><a href="#cafe-bengala">Café Bengala</a>
                       <ul>
                         <li><a href="#">Tipo de grano</a></li>
                         <li><a href="#">Origen</a></li>
@@ -54,7 +54,7 @@
                         <li><a href="#">Mezclas</a></li>
                       </ul>
                     </li>
-                    <li><a href="reservation.html">Productos</a>
+                    <li><a href="#menu">Productos</a>
                       <ul>
                         <li><a href="#">Cafe</a>
                           <ul>
@@ -72,9 +72,9 @@
                         <li><a href="#">Logo Shop</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">Cafeterías</a></li>
-                    <li><a href="#">Franquicia</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="#sucursales">Cafeterías</a></li>
+                    <li><a href="franquicias.html">Franquicia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                   </ul>
                 </nav>
               </div>
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="divisor" style="margin-top: 10x;">
+      <div class="divisor" style="margin-top: 10px;">
       </div>
     </div>
 
@@ -121,6 +121,36 @@
   <div class="divisor">
   </div>
   <!-- Banner Section End -->
+
+  <!-- Section -->
+  <div class="black-section">
+    <div class="row-fluid">
+      <div class="col-sm-4">
+        <h2>Franquicia</h2>
+        </br>
+        <img src="img/icono_franquicia.png" alt="" class="icon-hover icon-image">
+      </div>
+      <div class="col-sm-4">
+        <h2>Café Bengala</h2>
+        </br>
+        <img src="img/icono_franquicia.png" alt="" class="icon-hover icon-image">
+      </div>
+      <div class="col-sm-4">
+        <h2>Variedad en productos</h2>
+        </br>
+        <img src="img/icono_franquicia.png" alt="" class="icon-hover">
+      </div>
+    </div>
+  </div>
+  <div class="divisor">
+  </div>
+  <!-- end section -->
+
+  <img class="image-divisor" src="img/img-section2.png" alt="">
+  <div class="divisor">
+  </div>
+
+
   <!-- About Area Start -->
   <section class="about-area pt-70 pb-100" id="about">
     <div class="container">
@@ -158,7 +188,7 @@
   <!-- About Area End -->
 
   <!-- About Area Start -->
-  <section class="about-area pt-70 pb-100" id="about">
+  <section class="about-area pt-70 pb-100" id="about2">
     <div class="container">
       <div class="row" style="margin-bottom:15px;">
         <div class="col-md-6">
@@ -194,7 +224,7 @@
   <!-- About Area End -->
 
   <!-- Blog Area Start -->
-  <section class="blog-area ptb-100">
+  <section class="blog-area ptb-100" id="cafe-bengala">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -301,7 +331,7 @@
   <!-- Image Area End -->
 
   <!-- Menu Area Start -->
-  <section class="menu-area ptb-100">
+  <section class="menu-area ptb-100" id="menu">
     <div class="container">
       <h1 align="left">Frappés</h1>
       </br>
@@ -531,26 +561,26 @@
   </div>
 
   <!-- Special Area Strat -->
-  <section class="special-area bg-light ptb-100">
+  <section class="special-area bg-light ptb-100" id="sucursales">
     <div class="container-fluid">
-      <div class="special-item">
+      <div class="special-item" data-toggle="modal" data-target="#modalSantaLucia" style="margin-left: 25%;">
         <div class="item-content">
           <img src="img/sucursales/2.jpg" alt="">
           <div class="item-hover text-center">
             <div class="hover-text">
-              <h1><a href="menu.html">Santa Lucia</a></h1>
+              <h1>Santa Lucia</h1>
               <p>Calle 23 x 3 y 5, Col. Centro CP:93762</p>
               <span class="price">984 85 26</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="special-item">
+      <div class="special-item" data-toggle="modal" data-target="#modalSantiago">
         <div class="item-content">
           <img src="img/sucursales/3.jpg" alt="">
           <div class="item-hover text-center">
             <div class="hover-text">
-              <h1><a href="menu.html">Santiago</a></h1>
+              <h1>Santiago</h1>
               <p>Calle 23 x 3 y 5, Col. Centro CP:93762</p>
               <span class="price">984 85 26</span>
             </div>
@@ -559,71 +589,105 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal Santa Lucia -->
+  <div class="modal fade" id="modalSantaLucia" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLabel">Santa Lucia</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <center>
+            <div class="col-md-6 col-sm-6" style="margin-bottom: 20px;">
+              <img src="img/sucursales/santa-lucia.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6" style="margin-bottom: 20px;">
+              <img src="img/sucursales/santa-lucia-mapa.png" alt="">
+            </div>
+          </center>
+          </div>
+          <div class="row">
+            <center>
+            <div class="col-md-6 col-sm-6">
+              <p><b>Dirección: Calle 23 x 3 y 5, Col. Centro CP:93762</b></p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <p><b>Dirección: Calle 23 x 3 y 5, Col. Centro CP:93762</b></p>
+            </div>
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal santa lucia -->
+
+  <!-- Modal Santa Lucia -->
+  <div class="modal fade" id="modalSantiago" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalLabel2">Santiago</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <center>
+            <div class="col-md-6 col-sm-6" style="margin-bottom: 20px;">
+              <img src="img/sucursales/santa-lucia.jpg" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6" style="margin-bottom: 20px;">
+              <img src="img/sucursales/santa-lucia-mapa.png" alt="">
+            </div>
+          </center>
+          </div>
+          <div class="row">
+            <center>
+            <div class="col-md-6 col-sm-6">
+              <p><b>Dirección: Calle 23 x 3 y 5, Col. Centro CP:93762</b></p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <p><b>Dirección: Calle 23 x 3 y 5, Col. Centro CP:93762</b></p>
+            </div>
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal santa lucia -->
   <!-- Special Area End -->
 
   <div class="divisor">
   </div>
 
   <!-- Booking Area Start -->
-  <section class="booking-area ptb-100">
+  <section class="booking-area ptb-100" id="contacto">
     <div class="container">
-      <div class="row">
+      <div class="form-title">
         <div class="col-md-6 col-md-offset-3">
-          <div class="section-title text-center">
-            <h1>Reserva una mesa</h1>
-            <span><img src="img/icons/koffee.png" alt=""></span>
-            <p>Nuestos espacios perfectamente diseñados para ti </p>
-          </div>
+          <h1>Contáctanos</h1>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="booking-form">
-        <form action="#" method="POST">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <input type="text" placeholder="Nombre" name="name">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="text" placeholder="Telefono" name="phone">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="email" placeholder="Email" name="email">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="text" placeholder="Número de personas" name="people_num">
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="date-wrapper">
-                <input type="text" class="datepicker" placeholder="Fecha">
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <input type="text" placeholder="Hora" name="time">
-            </div>
-            <div class="col-md-12 text-center fix">
-              <button class="default-btn" type="submit"><span>ENVIAR</span></button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <form action="#" method="POST">
+        <div class="col-md-4 form-right booking-form">
+          <input type="text" placeholder="Nombre" name="name">
+          <input type="text" placeholder="Número" name="phone">
+          <input type="email" placeholder="Correo" name="email">
+          <input type="text" placeholder="Comentario" name="comment">
+          <center>
+            <button class="default-btn" type="submit"><span>ENVIAR</span></button>
+          </center>
+        </div>
+      </form>
     </div>
   </section>
   <!-- Booking Area End -->
-  <!-- Advertise Area Start -->
-  <section class="advertise-area bg-1 ptb-100 overlay-1">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="advertise-text text-center">
-            <h1>NUESTROS CAFÉ HECHO CON AMOR Y PASION</h1>
-            <p>En Bengala Cold Brew hemos seleccionado café orgánico certificado de Oaxaca para preparar este fresco concentrado de café</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Advertise Area End -->
 
   <!-- Event Area Start -->
   <!--
